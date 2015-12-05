@@ -1,0 +1,122 @@
+/*
+All of the code on this page is original and of course controls the presentation part of the site, in regards to setting up columns to organize the nav bar, quiz links and quizzes. This file also maintains the color of the pages and footer, the size of the banner,the style elements of the text (size, color, name, etc.), the format of the nav bar list, and genereal margins/padding on the site.
+*/
+
+
+hr{
+	border: 1px solid grey;
+}
+
+.tablec{
+	width: 100px;
+	height: 150px;
+}
+
+#container{
+	background-color: #faffff;
+	width: 100%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+
+#column1{
+	font-family: 'Exo', sans-serif;
+	width: 70%;
+	float: right;
+	padding-right: 50px;
+	padding-left: 20px;
+}
+
+#column2{
+	font-family: 'Exo', sans-serif;
+	font-size: 17px;
+	column-gap: 10px;
+	width: 155px;
+	float: left;
+	/*border-left: 1px solid grey;*/
+	border-right: 1px solid grey;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 340px;
+}
+
+#column3{
+	font-family: 'Exo', sans-serif;
+	width: 70%;
+	float: center;
+	padding-right: 50px;
+	padding-left: 20px;
+}
+
+.banner{
+	position: relative;
+	width: 100%;
+}
+
+h1{
+	position: absolute;
+	/*top: 200px;*/
+	left: 90px;
+	width: 100%;
+	bottom: 20px;
+}
+
+h1 span{
+	color: black; 
+	font-family: 'Lobster', cursive;
+	font-size: 70px;
+	letter-spacing: -1px;  
+	/*background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);*/
+	padding: 10px;
+}
+
+h1 span.spacer {
+   padding:0 5px;
+}
+
+
+.shoes{
+	position: relative;
+	width: 100%;
+}
+
+h2{
+	position: absolute;
+	top: 200px;
+	left: 0;
+	width: 100%;
+}
+
+h2 span{
+	color: white; 
+	font: bold 24px/45px Helvetica, Sans-Serif; 
+	letter-spacing: -1px;  
+	background: rgb(0, 0, 0); /* fallback color */
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px; 
+}
+
+h2 span.spacer {
+   padding:0 5px;
+}
+
+ ul li{
+	list-style-type: none;
+	font-family: 'Exo', sans-serif;
+}
+
+
+
+footer{
+	font-family: 'Exo', sans-serif;
+	margin: 0;
+	padding: 0;
+	/*width: 100%;*/
+	clear: both;
+	color: white;
+	text-align: center;
+	height:200px;
+	background-color: #608AE3;
+}

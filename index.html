@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Art Authority</title>
+<meta charset="utf-8">
+<meta name="keywords" content="Art Authority,Home,Quiz 1,Quiz 2, Quiz 3, Quiz 4">
+<link rel="stylesheet" href="format.css">
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Exo:400,600' rel='stylesheet' type='text/css'>
+<script src='jquery-1.8.3.min.js'></script>
+<script src='jquery.elevatezoom.js'></script>
+</head>
+
+<!--
+The only information that was not original in this page of code was the jquery Zoom Plugin from:
+    *http://www.elevateweb.co.uk/image-zoom/examples
+This allowed the images on the home page to have a zoom in effect when the user moves the mouse on top of the images. I modified it by adding three more ids, so each image had a unique id that would tell it to zoom in when the mouse was on top of it. Also, I added my images to the code and modified them so that two different sized images worked for the small to big zoom in effect.
+
+The twitter and google+ icons in the footer are from a repository I forked on Github:
+    *https://github.com/Jmack2/simple-icons
+It was a free set of PNG icons in black and white, from 16px to 4096px.
+
+I created the banner on the page in Gimp and used images from:
+    *https://en.wikipedia.org/wiki/File:The_Persistence_of_Memory.jpg
+    *http://www.warhol.org/collection/art/work/1998-1-307/
+    *https://www.khanacademy.org/humanities/monarchy-enlightenment/baroque-art1/baroque-italy/a/bernini-david
+-->    
+    
+<body>    
+<div id="container">
+<div class="gradient">
+<div class="banner">
+    <a href="index.html">
+<header><h1><span class='spacer'>Art Authority</span></h1></header>
+    <img src="images/ArtAuthorityBanner.png" alt="art_authority_banner" height="120" style= "width:100%">
+    </a>
+</div>
+<hr>
+<div id="column1">
+<div class="shoes">
+    <p>These images are the links to the quizzes in respective order of the navigation bar on the left.</p>
+    
+    <a href="quiz1.html">
+        <img id="zoom_01" src="images/small/david-face.jpg" data-zoom-image="images/large/david-face.jpg"/>
+    </a>
+    <a href="quiz2.html">
+        <img id="zoom_02" src="images/small/BerniniDavid.jpg" data-zoom-image="images/large/BerniniDavid.jpg"/>
+    </a>
+    <a href="quiz3.html">
+        <img id="zoom_03" src="images/small/DetailsofRenaissancePaintings.jpg" data-zoom-image="images/large/DetailsofRenaissancePaintings.jpg"/>
+    </a>
+    <a href="quiz4.html">
+         <img id="zoom_04" src="images/small/the-persistence-of-memory.jpg" data-zoom-image="images/large/the-persistence-of-memory.jpg"/>
+    </a>
+     <script>
+    $('#zoom_01').elevateZoom({
+    zoomType: "inner",
+    cursor: "crosshair",
+    zoomWindowFadeIn: 500,
+    zoomWindowFadeOut: 750
+   }); 
+    $('#zoom_02').elevateZoom({
+    zoomType: "inner",
+    cursor: "crosshair",
+    zoomWindowFadeIn: 500,
+    zoomWindowFadeOut: 750
+   });
+    $('#zoom_03').elevateZoom({
+    zoomType: "inner",
+    cursor: "crosshair",
+    zoomWindowFadeIn: 500,
+    zoomWindowFadeOut: 750
+   });
+    $('#zoom_04').elevateZoom({
+    zoomType: "inner",
+    cursor: "crosshair",
+    zoomWindowFadeIn: 500,
+    zoomWindowFadeOut: 750
+   });
+</script>
+</div>
+
+<!--<div id="column3">
+</div>-->
+</div>
+    
+<div id="column2">
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="quiz1.html">Quiz 1</a></li>
+<li><a href="quiz2.html">Quiz 2</a></li>
+<li><a href="quiz3.html">Quiz 3</a></li>
+<li><a href="quiz4.html">Quiz 4</a></li>
+</ul>
+</nav>
+</div>
+
+<footer> 
+<p>Please come chat!</p>
+<p>
+<a href="https://twitter.com/"><img src="simple-icons-master/icons/twitter/twitter-64.png" alt="blue twitter bird icon"></a>
+<a href="https://plus.google.com/u/0/111260345882022049842/posts"><img src="simple-icons-master/icons/googleplus/googleplus-64.png"></a>
+<br>
+Contact me also at<br> <a href="mailto:mackjj@g.cofc.edu">mackjj@g.cofc.edu</a><br>Copyright 2015 &copy; Art Authority
+</p>
+</footer>
+
+</div><!--div for banner-->
+</div>
+</body>
+
+</html>
